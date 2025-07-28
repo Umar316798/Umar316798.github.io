@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Ahamed's Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333; /* Dark text color */
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: #4f46e5; /* Indigo */
+            border-radius: 2px;
+        }
+        /* Style for the emoji icons */
+        .emoji-icon {
+            font-size: 4rem; /* Larger emoji size */
+            line-height: 1; /* Adjust line height for better centering */
+            display: block; /* Make it a block element for margin auto */
+            margin: 0 auto 1rem auto; /* Center horizontally and add bottom margin */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-indigo-700 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold rounded-md px-3 py-2 hover:bg-indigo-600 transition duration-300">Umar Ahamed</a>
+            <div class="space-x-4">
+                <a href="#about" class="text-white text-lg hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2 hover:bg-indigo-600">About</a>
+                <a href="#skills" class="text-white text-lg hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2 hover:bg-indigo-600">Skills</a>
+                <a href="#experience" class="text-white text-lg hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2 hover:bg-indigo-600">Experience</a>
+                <a href="#projects" class="text-white text-lg hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2 hover:bg-indigo-600">Projects</a>
+                <a href="#hobbies" class="text-white text-lg hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2 hover:bg-indigo-600">Hobbies</a>
+                <a href="#contact" class="text-white text-lg hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2 hover:bg-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (About Me) -->
+    <section id="about" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 px-4 flex items-center justify-center min-h-screen-75">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left space-y-8 md:space-y-0 md:space-x-12">
+            <div class="flex-shrink-0">
+                <!-- Placeholder image for your profile picture -->
+                <img src="https://placehold.co/200x200/6366f1/ffffff?text=Umar+Photo" alt="Umar Ahamed Photo" class="w-48 h-48 rounded-full shadow-xl border-4 border-white object-cover">
+            </div>
+            <div>
+                <h1 class="text-5xl font-extrabold mb-4 leading-tight">Hello, I'm <span class="text-yellow-300">Umar Ahamed</span></h1>
+                <p class="text-2xl mb-6 font-light">An aspiring <span class="font-semibold">Electrical Engineering Student</span> with a focus on <span class="font-semibold">Embedded Systems, Circuit Design, and AI Integration</span>.</p>
+                <p class="text-lg max-w-2xl mx-auto md:mx-0">
+                    Currently pursuing a Bachelor of Science in Software Engineering at San Jose State University, I am passionate about hands-on hardware and circuit design projects. My experience spans from optimizing electrical systems in Formula SAE to developing real-time fall detection systems and interactive web toolkits for EE students.
+                </p>
+                <div class="mt-8">
+                    <a href="#projects" class="bg-white text-indigo-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg transform hover:scale-105 inline-block mr-4">View My Projects</a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-indigo-700 transition duration-300 shadow-lg transform hover:scale-105 inline-block">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold section-title text-indigo-800 mb-12">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Card 1: Circuit Design & Analysis -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Circuit Design & Analysis</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>PCB Design, Circuit Analysis</li>
+                        <li>Altium Designer, KiCad, LTspice, Multisim</li>
+                        <li>Oscilloscope, Signal Generator, Soldering</li>
+                        <li>Power Integrity, Signal Integrity</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 2: Embedded Systems & Hardware -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Embedded Systems & Hardware</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Raspberry Pi, Arduino, Microcontrollers</li>
+                        <li>GPIO, UART, SPI, I2C, PWM, ADC, DAC</li>
+                        <li>FPGA, RTL Design, GDSII, Tiny Tapeout, OpenLane</li>
+                        <li>Sensors, Simulation, Custom Silicon</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 3: Programming & Tools -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Programming & Tools</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Python, C, C++, Verilog, MATLAB, Bash</li>
+                        <li>FastAPI, NumPy, Matplotlib, Pandas</li>
+                        <li>Git, VS Code, Linux, Jupyter Notebook</li>
+                        <li>Technical Documentation, Debugging, Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Resume) -->
+    <section id="experience" class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold section-title text-indigo-800 mb-12">My Experience</h2>
+            <div class="space-y-10">
+                <!-- Electronics Intern -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-indigo-700">Electronics Intern</h3>
+                            <p class="text-xl text-gray-600">Spartan Racing, SJSU Formula SAE</p>
+                        </div>
+                        <p class="text-gray-500 text-lg mt-2 md:mt-0">May 2025 - Present</p>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Optimized electrical system reliability, ensuring peak performance and safety during demanding race conditions, by meticulously wiring components and installing sensors in the car in preparation for competition.</li>
+                        <li>Applied foundational knowledge of Altium Designer, contributing to the initial design phase of critical vehicle electronic circuits to ensure adherence to rigorous performance standards, by analyzing PCB schematics.</li>
+                    </ul>
+                </div>
+                <!-- Research Assistant -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-indigo-700">Research Assistant</h3>
+                            <p class="text-xl text-gray-600">San Jose State University</p>
+                        </div>
+                        <p class="text-gray-500 text-lg mt-2 md:mt-0">June 2025 – August 2025</p>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Developed a logic-based binary classifier utilizing Verilog for implementation on a custom Tiny Tapeout ASIC chip, achieved by designing a visual VGA output interface to display system states (e.g., based on digital switch inputs) using RGB color encoding, optimizing the gate-level design for efficient resource utilization in the chip.</li>
+                        <li>Enhanced functional coverage by 25% by creating comprehensive cocotb testbenches and identifying 3 critical logic bugs in RTL, ensuring design verification and validating circuit behavior across diverse test cases.</li>
+                        <li>Streamlined project submission, ensuring 100% compliance with all Tiny Tapeout platform requirements, by meticulously documenting the complete ASIC design process, including detailed test procedures and functionality.</li>
+                    </ul>
+                </div>
+                <!-- Medical Sales Associate (if you want to include non-EE experience) -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-indigo-700">Medical Sales Associate</h3>
+                            <p class="text-xl text-gray-600">The Group Inc.</p>
+                        </div>
+                        <p class="text-gray-500 text-lg mt-2 md:mt-0">Nov. 2022 – Dec. 2024</p>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Enhanced patient compliance and device performance, leading to a 15% improvement in long-term satisfaction and outcomes for over 200 patients, by conducting product demonstrations on maintenance.</li>
+                        <li>Recommended and fitted hearing aids and auditory medical devices based on patient-specific needs, improving hearing outcomes, device adherence, and overall quality of care of care across diverse patient populations.</li>
+                        <li>Optimized human eval experiment deployment pipeline and reduced eval template's development time by 30%.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <!-- Resume download link updated to a placeholder for your PDF -->
+                <a href="https://Umar316798.github.io/Ahamed_Umar_Resume%20(2).pdf" target="_blank" class="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 shadow-lg transform hover:scale-105 inline-block">Download Full Resume (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (formerly Portfolio) -->
+    <section id="projects" class="py-20 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold section-title text-indigo-800 mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Item 1: Embedded AI for Smart Fall Detection -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400/a78bfa/ffffff?text=Fall+Detection+AI" alt="Embedded AI for Smart Fall Detection" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Embedded AI for Smart Fall Detection</h3>
+                        <p class="text-gray-700 mb-4">Developing a real-time fall detection and multi-modal alert system using Raspberry Pi, OpenCV, and Python, targeting 95% detection accuracy and under 2 seconds alert response time.</p>
+                        <!-- Add GitHub link if available -->
+                        <!-- <a href="https://github.com/yourusername/fall-detection-project" target="_blank" class="text-indigo-600 hover:underline font-medium">View Project on GitHub &rarr;</a> -->
+                    </div>
+                </div>
+                <!-- Project Item 2: EE Website Toolkit -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400/818cf8/ffffff?text=EE+Toolkit" alt="EE Website Toolkit" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-indigo-700 mb-2">EE Website Toolkit</h3>
+                        <p class="text-gray-700 mb-4">Developing an interactive web toolkit for Electrical Engineering students using React, Vite, and FastAPI, enhancing calculation efficiency by 20% and supporting over 10 core component calculations.</p>
+                        <!-- Add GitHub link if available -->
+                        <!-- <a href="https://github.com/yourusername/ee-toolkit" target="_blank" class="text-indigo-600 hover:underline font-medium">View Project on GitHub &rarr;</a> -->
+                    </div>
+                </div>
+                <!-- Add more project items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold section-title text-indigo-800 mb-12">My Interests & Hobbies</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Hobby 1: Gym -->
+                <div class="bg-white p-6 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1 text-center">
+                    <span class="emoji-icon">💪</span>
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Gym & Fitness</h3>
+                </div>
+                <!-- Hobby 2: Swimming -->
+                <div class="bg-white p-6 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1 text-center">
+                    <span class="emoji-icon">🏊</span>
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Swimming</h3>
+                </div>
+                <!-- Hobby 3: Reading -->
+                <div class="bg-white p-6 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1 text-center">
+                    <span class="emoji-icon">📚</span>
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Reading</h3>
+                </div>
+                <!-- Hobby 4: Building Things -->
+                <div class="bg-white p-6 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1 text-center">
+                    <span class="emoji-icon">🛠️</span>
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Building & Tinkering</h3>
+                </div>
+                <!-- Hobby 5: Cars (Updated) -->
+                <div class="bg-white p-6 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1 text-center">
+                    <span class="emoji-icon">🚗</span>
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Cars</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold section-title text-indigo-800 mb-12">Get in Touch</h2>
+            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                I'm always open to new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <div class="flex flex-col items-center space-y-6">
+                <a href="mailto:umar.ahamed@sjsu.edu" class="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 shadow-lg transform hover:scale-105 inline-flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 6v4m0 0H9m3 0h3m-6-4h6m-2-4v4"></path></svg>
+                    umar.ahamed@sjsu.edu
+                </a>
+                <a href="https://www.linkedin.com/in/umar-ahamed-a94382259/" target="_blank" class="bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-800 transition duration-300 shadow-lg transform hover:scale-105 inline-flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-7.982v16h7.982v-8.75c0-4.673 5.006-4.508 5.006 0v8.75h7.982v-11.75c0-6.187-7.003-6.039-7.982-1.498v-2.752z"/></svg>
+                    LinkedIn Profile
+                </a>
+                <!-- GitHub profile link updated -->
+                <a href="https://github.com/Umar316798" target="_blank" class="bg-gray-800 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-900 transition duration-300 shadow-lg transform hover:scale-105 inline-flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.792 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.334-1.756-1.334-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.49.998.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.382 1.235-3.22-.124-.3-.535-1.52.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.4 3.003-.404 1.02.004 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.652 1.656.241 2.876.118 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.806 5.624-5.478 5.92.43.37.81 1.096.81 2.22 0 1.606-.015 2.89-.015 3.286 0 .315.21.69.825.577C20.565 21.808 24 17.318 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd"/></svg>
+                    GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-700 text-white py-8 px-4 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Umar Ahamed. All rights reserved.</p>
+            <p class="mt-2">Built with ❤️ and Tailwind CSS</p>
+        </div>
+    </footer>
+
+</body>
+</html>
